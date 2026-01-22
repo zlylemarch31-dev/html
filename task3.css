@@ -6,11 +6,15 @@ p{
 }
 h1{
     font-family: Arial, Helvetica, sans-serif;
-    color: #c08429;
+    color: #462506;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #9f6920;
 }
 h3{
     font-family: Arial, Helvetica, sans-serif;
-    color: #f2d275;
+    color: #daa755;
 }
 ul{
     font-family: Arial, Helvetica, sans-serif;
