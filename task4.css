@@ -1,0 +1,43 @@
+body {
+            background-color: lightgray;
+            padding: 20px;
+        }
+
+        form {
+            background-color: white;
+            padding: 30px;
+            width: 600px;
+        }
+
+        input {
+            padding: 8px;
+        }
+
+        select {
+            padding: 8px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+        }
+
+        table {
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 600px;
+            background-color: white;
+            margin-bottom: 30px;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }

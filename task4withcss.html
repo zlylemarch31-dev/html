@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="task4.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <hr>
+    
+    <p>Thank you for your interest in working with us. Please check below for available job opportunities that meet your criteria and send your application by filling out the Job Application Form.</p>
+    
+    <h2>Available Job Positions</h2>
+    <table border="1">
+        <tr>
+            <th>Position</th>
+            <th>Department</th>
+            <th>Location</th>
+            <th>Type</th>
+        </tr>
+        <tr>
+            <td>Software Engineer</td>
+            <td>IT Department</td>
+            <td>Digos City</td>
+            <td>Full-time</td>
+        </tr>
+        <tr>
+            <td>Web Developer</td>
+            <td>IT Department</td>
+            <td>Digos City</td>
+            <td>Full-time</td>
+        </tr>
+        <tr>
+            <td>Designer</td>
+            <td>Creative Department</td>
+            <td>Digos City</td>
+            <td>Part-time</td>
+        </tr>
+        <tr>
+            <td>Marketing</td>
+            <td>Sales & Marketing</td>
+            <td>Digos City</td>
+            <td>Full-time</td>
+        </tr>
+        <tr>
+            <td>Sales</td>
+            <td>Sales & Marketing</td>
+            <td>Digos City</td>
+            <td>Full-time</td>
+        </tr>
+    </table>
+    
+    <br>
+    
+    <h2>Application Form</h2>
+    <form>
+        <label for="firstName"><b>Name</b></label><br>
+        <input type="text" id="firstName" name="firstName" placeholder="First">
+        <input type="text" id="lastName" name="lastName" placeholder="Last"><br><br>
+        
+        <label for="email"><b>Email</b></label><br>
+        <input type="email" id="email" name="email" placeholder="john.doe@example.com" size="50"><br><br>
+        
+        <label for="position"><b>What position are you applying for?</b></label><br>
+        <select id="position" name="position">
+            <option value="">- Select -</option>
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="Web Developer">Web Developer</option>
+            <option value="Designer">Designer</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Sales">Sales</option>
+        </select><br><br>
+        
+        <label for="availableDate"><b>Available date</b></label><br>
+        <input type="date" id="availableDate" name="availableDate"><br><br>
+        
+        <label><b>What is your current employee status?</b></label><br>
+        <input type="radio" id="employed" name="employmentStatus" value="employed">
+        <label for="employed">Employed</label><br>
+        
+        <input type="radio" id="selfEmployed" name="employmentStatus" value="selfEmployed">
+        <label for="selfEmployed">Self-Employed</label><br>
+        
+        <input type="radio" id="unemployed" name="employmentStatus" value="unemployed">
+        <label for="unemployed">Unemployed</label><br>
+        
+        <input type="radio" id="student" name="employmentStatus" value="student">
+        <label for="student">Student</label><br><br>
+        
+        <label for="resumeLink"><b>Please provide your resume link</b></label><br>
+        <input type="url" id="resumeLink" name="resumeLink" placeholder="https://www.example.com/" size="50"><br><br>
+        
+        <label for="resumeUpload"><b>Please upload your resume</b></label><br>
+        <input type="file" id="resumeUpload" name="resumeUpload" accept=".pdf,.doc,.docx"><br><br>
+        
+        <label for="referenceFirstName"><b>Do you have references? (optional)</b></label><br>
+        <input type="text" id="referenceFirstName" name="referenceFirstName" placeholder="First">
+        <input type="text" id="referenceLastName" name="referenceLastName" placeholder="Last"><br><br>
+        
+        <label for="referenceEmail"><b>Reference email</b></label><br>
+        <input type="email" id="referenceEmail" name="referenceEmail" placeholder="john.doe@example.com" size="50"><br><br>
+        
+        <button type="reset">Reset</button>
+        <button type="submit">Apply</button>
+    </form>
+</body>
+</html>
