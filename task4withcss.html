@@ -4,106 +4,56 @@
     <link rel="stylesheet" href="task4.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Application Form</title>
+    <title>Hikers Registration - Hiking on Mt. Apo</title>
 </head>
 <body>
-    <h1>Job Application Form</h1>
+   <h1><p><strong>Hikers Registration</strong></p> </h1>
+    <p><strong>Hiking on Mt. Apo</strong></p>
+    
+    <p>Sabay Hike- Hiking on Mt. Apo<br>
+    Brgy. Kapatagan, Digos City, Davao del Sur<br>
+        
     <hr>
     
-    <p>Thank you for your interest in working with us. Please check below for available job opportunities that meet your criteria and send your application by filling out the Job Application Form.</p>
-    
-    <h2>Available Job Positions</h2>
-    <table border="1">
-        <tr>
-            <th>Position</th>
-            <th>Department</th>
-            <th>Location</th>
-            <th>Type</th>
-        </tr>
-        <tr>
-            <td>Software Engineer</td>
-            <td>IT Department</td>
-            <td>Digos City</td>
-            <td>Full-time</td>
-        </tr>
-        <tr>
-            <td>Web Developer</td>
-            <td>IT Department</td>
-            <td>Digos City</td>
-            <td>Full-time</td>
-        </tr>
-        <tr>
-            <td>Designer</td>
-            <td>Creative Department</td>
-            <td>Digos City</td>
-            <td>Part-time</td>
-        </tr>
-        <tr>
-            <td>Marketing</td>
-            <td>Sales & Marketing</td>
-            <td>Digos City</td>
-            <td>Full-time</td>
-        </tr>
-        <tr>
-            <td>Sales</td>
-            <td>Sales & Marketing</td>
-            <td>Digos City</td>
-            <td>Full-time</td>
-        </tr>
-    </table>
-    
-    <br>
-    
-    <h2>Application Form</h2>
     <form>
-        <label for="firstName"><b>Name</b></label><br>
-        <input type="text" id="firstName" name="firstName" placeholder="First">
-        <input type="text" id="lastName" name="lastName" placeholder="Last"><br><br>
+        <p>Hike Description: <input type="text" name="description" size="50"></p>
         
-        <label for="email"><b>Email</b></label><br>
-        <input type="email" id="email" name="email" placeholder="john.doe@example.com" size="50"><br><br>
+        <p>Date: <input type="date" name="date"> Start Time: <input type="text" name="starttime"></p>
         
-        <label for="position"><b>What position are you applying for?</b></label><br>
-        <select id="position" name="position">
-            <option value="">- Select -</option>
-            <option value="Software Engineer">Software Engineer</option>
-            <option value="Web Developer">Web Developer</option>
-            <option value="Designer">Designer</option>
-            <option value="Marketing">Marketing</option>
-            <option value="Sales">Sales</option>
-        </select><br><br>
+        <p>Number of Participants: <input type="number" name="participants" min="1"><br>
+        (A separate Registration form is required for each participant. Guardians should complete and sign for their children.)</p>
         
-        <label for="availableDate"><b>Available date</b></label><br>
-        <input type="date" id="availableDate" name="availableDate"><br><br>
+        <p>Price of hike: <input type="text" name="pricehike"> Price per person: <input type="text" name="priceperson"></p>
         
-        <label><b>What is your current employee status?</b></label><br>
-        <input type="radio" id="employed" name="employmentStatus" value="employed">
-        <label for="employed">Employed</label><br>
+        <p>Hike is: <input type="radio" name="hiketype" value="private"> Private / <input type="radio" name="hiketype" value="open"> Open </p>
         
-        <input type="radio" id="selfEmployed" name="employmentStatus" value="selfEmployed">
-        <label for="selfEmployed">Self-Employed</label><br>
+        <p>Name in Full: <input type="text" name="fullname" size="50"></p>
         
-        <input type="radio" id="unemployed" name="employmentStatus" value="unemployed">
-        <label for="unemployed">Unemployed</label><br>
+        <p>Full Home Address: <input type="text" name="homeaddress" size="50"></p>
         
-        <input type="radio" id="student" name="employmentStatus" value="student">
-        <label for="student">Student</label><br><br>
+        <p>Address of Hike: <input type="text" name="hydraaddress" size="50"></p>
         
-        <label for="resumeLink"><b>Please provide your resume link</b></label><br>
-        <input type="url" id="resumeLink" name="resumeLink" placeholder="https://www.example.com/" size="50"><br><br>
+        <p>Contact Name, Relationship & Tel Number in case of Emergencies:<br>
+        <input type="text" name="contactname" size="50"></p>
         
-        <label for="resumeUpload"><b>Please upload your resume</b></label><br>
-        <input type="file" id="resumeUpload" name="resumeUpload" accept=".pdf,.doc,.docx"><br><br>
+        <p>Age: <input type="number" name="age" min="0"> 
+            <br>
+            Any Health Conditions to consider: <input type="text" name="healthconditions" size="30"></p>
         
-        <label for="referenceFirstName"><b>Do you have references? (optional)</b></label><br>
-        <input type="text" id="referenceFirstName" name="referenceFirstName" placeholder="First">
-        <input type="text" id="referenceLastName" name="referenceLastName" placeholder="Last"><br><br>
+        <hr>
         
-        <label for="referenceEmail"><b>Reference email</b></label><br>
-        <input type="email" id="referenceEmail" name="referenceEmail" placeholder="john.doe@example.com" size="50"><br><br>
+        <p>Disclaimer: By signing this form you agree and absolve Sabay Hike from any responsibility if you have an accident during your hike.</p>
         
-        <button type="reset">Reset</button>
-        <button type="submit">Apply</button>
+        <p>To confirm input name again: <input type="text" name="signature" size="40"></p>
+        
+        <p>Please return this registration with payment to me before the start of the hike.</p>
+        
+        <br>
+        
+        <p>
+            <button type="submit">Submit Registration</button>
+            <button type="reset">Clear Form</button>
+        </p>
     </form>
 </body>
 </html>
