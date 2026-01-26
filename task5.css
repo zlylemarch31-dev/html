@@ -1,0 +1,117 @@
+body {
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.container {
+    background: white;
+    padding: 0;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    background: #5fa894;
+    padding: 30px 20px;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px 30px 30px;
+}
+
+.label {
+    display: none;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 15px 12px 60px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s;
+    height: 50px;
+    box-sizing: border-box;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45"><rect width="45" height="45" rx="5" fill="%235fa894"/><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="18">👤</text></svg>');
+    background-repeat: no-repeat;
+    background-position: 5px center;
+}
+
+.input[type="password"] {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45"><rect width="45" height="45" rx="5" fill="%235fa894"/><text x="50%" y="50%" text-anchor="middle" dy=".3em" fill="white" font-size="18">🔒</text></svg>');
+}
+
+.input:focus {
+    outline: none;
+    border-color: #5fa894;
+    box-shadow: 0 0 5px rgba(95, 168, 148, 0.5);
+}
+
+.input::placeholder {
+    color: #aaa;
+}
+
+.btn {
+    width: 100%;
+    padding: 14px;
+    background: #5fa894;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.text {
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+.link {
+    color: #7fc7af;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.container.register .title {
+    text-align: left;
+    color: #333;
+    background: white;
+    padding: 30px 30px 10px 30px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.container.register .form {
+    padding-top: 20px;
+}
+
+.container.register .input {
+    padding: 12px 15px;
+    background-image: none;
+}
